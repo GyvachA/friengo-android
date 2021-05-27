@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_geo"
+    app:startDestination="@id/bottomNavigationFragment">
+
+
+    <fragment
+        android:id="@+id/signFragment"
+        android:name="com.hypnex.friengo.fragments.SignFragment"
+        android:label="SignFragment">
+        <action
+            android:id="@+id/action_signFragment_to_bottomNavigationFragment"
+            app:destination="@id/bottomNavigationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/signFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottomNavigationFragment"
+        android:name="com.hypnex.friengo.fragments.BottomNavigationFragment"
+        android:label="BottomNavigationFragment">
+        <action
+            android:id="@+id/action_bottomNavigationFragment_to_signFragment"
+            app:destination="@id/signFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/bottomNavigationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

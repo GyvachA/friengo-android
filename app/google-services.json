@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "657715737977",
+    "project_id": "geo-app-android",
+    "storage_bucket": "geo-app-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657715737977:android:903d27eb323c4368a76ba8",
+        "android_client_info": {
+          "package_name": "com.hypnex.friengo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657715737977-ckqlf0fq4ept3f1p038u8kjnr06kcl6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmBUttIEckP2QraAU7oLjKcDsaucXTOXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657715737977-ckqlf0fq4ept3f1p038u8kjnr06kcl6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

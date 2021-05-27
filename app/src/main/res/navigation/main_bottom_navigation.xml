@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_bottom_navigation"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.hypnex.friengo.fragments.ChatFragment"
+        android:label="ChatFragment" />
+    <fragment
+        android:id="@+id/friendsFragment"
+        android:name="com.hypnex.friengo.fragments.FriendsFragment"
+        android:label="FriendsFragment" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.hypnex.friengo.fragments.MapFragment"
+        android:label="MapFragment">
+        <action
+            android:id="@+id/action_mapFragment_to_eventAddFragment"
+            app:destination="@id/eventAddFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/mapFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_eventShowFragment"
+            app:destination="@id/eventShowFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.hypnex.friengo.fragments.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.hypnex.friengo.fragments.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/eventAddFragment"
+        android:name="com.hypnex.friengo.fragments.EventAddFragment"
+        android:label="EventAddFragment">
+        <argument
+            android:name="coordinates"
+            app:argType="com.google.android.gms.maps.model.LatLng" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventShowFragment"
+        android:name="com.hypnex.friengo.fragments.EventShowFragment"
+        android:label="EventShowFragment" >
+        <argument
+            android:name="event"
+            app:argType="com.hypnex.friengo.data.models.Event" />
+    </fragment>
+</navigation>

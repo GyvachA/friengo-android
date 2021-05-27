@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FrienGo</string>
+
+    <!--  SIGN IN  -->
+    <string name="hello_sign_app">Вход в FrienGo</string>
+    <string name="google_sign_up">Sign in with Google</string>
+    <string name="google_sign_up_failed">Ошибка авторизации с помощью Google</string>
+
+    <!--  BOTTOM NAV MENU ITEMS  -->
+    <string name="friends">Друзья</string>
+    <string name="chat">Чат</string>
+    <string name="map">Карта</string>
+    <string name="profile">Профиль</string>
+    <string name="settings">Настройки</string>
+    <string name="permission_rationale_location">Доступ к Вашей геолокации необходим для демонстрации друзьям</string>
+    <string name="permission_required_toast">Доступ к геолокации необходим для корректной работы приложения</string>
+    <string name="location_permission_denied">Для корректной работы приложения необходимо получить доступ к геолокации. Пожалуйста, попробуйте снова</string>
+    <string name="exit_profile_string">Выйти из профиля</string>
+    <string name="login">Логин</string>
+    <string name="profile_image_desc">Profile image</string>
+    <string name="group_friends_hint">Группа друзей</string>
+    <string name="title_event">Название</string>
+    <string name="description_event">Описание</string>
+    <string name="friend_groups_event">Выберите группы друзей</string>
+    <string name="decline">Отмена</string>
+    <string name="create_event">Опубликовать</string>
+    <string name="save_toolbar">Сохранить</string>
+    <string name="add_to_friends">Добавить в друзья</string>
+</resources>
